@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <resume
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="xsd_resume.xsd">
+ <lastName>Іваненко</lastName>
+ <firstName>Сергій</firstName>
+ <initials>Вікторович</initials>
+ <bday>1996-03-16</bday>
+ <edu level="school">
+ ЗОГ №57 м.Київ
+ </edu>
+ <edu level="academy">
+ Українська Академія Архітектури
+ </edu>
+ <job>
+ <company type="ВАТ">Архіматика</company>
+ <post>Головний архітектор</post>
+ <start>2019-11-25</start>
+ <end>2020-02-20</end>
+ </job>
+
+</resume>

@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!ELEMENT resume (lastName, firstName, initials?, bday,
+ edu+, job*, image)>
+<!ELEMENT lastName (#PCDATA)>
+<!ELEMENT firstName (#PCDATA)>
+<!ELEMENT initials (#PCDATA)>
+<!ELEMENT bday (#PCDATA)>
+<!ELEMENT edu (#PCDATA)>
+<!ATTLIST edu
+ level (school|college|university|academy) 'university'>
+<!ELEMENT job (company,post,start,end)>
+<!ELEMENT company (#PCDATA)>
+<!ELEMENT post (#PCDATA)>
+<!ELEMENT exp (#PCDATA)>
+<!ELEMENT start (#PCDATA)>
+<!ELEMENT end (#PCDATA)>
+<!ELEMENT image (#PCDATA)>
+<!ATTLIST image
+ href (image1.png|image2.png|image3.png|image4.png) 'image1.png'>

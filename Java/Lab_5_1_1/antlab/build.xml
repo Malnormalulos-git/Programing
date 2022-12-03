@@ -1,0 +1,18 @@
+<?xml version = "1.0"?>
+<project name = "ProjectPalindrom" default = "execute">
+
+	<target name = "init">
+		<mkdir dir ="build"/>
+		<echo> init complete ! </echo>
+	</target>
+
+	<target name = "compile" depends = "init">
+		<javac srcdir = "src" destdir = "build" includeantruntime = "false"/>
+		<echo> compilation complete ! </echo>
+	</target>
+
+	<target name = "execute" depends = "compile">
+		<java classname = "edu.zntu.filippenkov.DemoAdamAndEva" classpath = "build">
+		</java>
+	</target>
+</project>

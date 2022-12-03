@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT
+ resume (lastName,firstName,initials?,bday,edu+,job*,contact+)>
+<!ELEMENT lastName (#PCDATA)>
+<!ELEMENT firstName (#PCDATA)>
+<!ELEMENT initials (#PCDATA)>
+<!ELEMENT bday (#PCDATA)>
+<!ELEMENT edu (#PCDATA)>
+<!ATTLIST edu
+ level (school|college|university|academy) 'university'>
+<!ELEMENT job (company,post,start,end)>
+<!ELEMENT company (#PCDATA)>
+<!ELEMENT post (#PCDATA)>
+<!ELEMENT start (#PCDATA)>
+<!ELEMENT end (#PCDATA)>
+<!ELEMENT contact (#PCDATA)>
+<!ATTLIST contact
+ type (tel|adress|email|Skype) 'tel'>

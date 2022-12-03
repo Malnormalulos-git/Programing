@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE resume SYSTEM "dtd_resume.dtd">
+ <resume>
+ <lastName>Петрова</lastName>
+ <firstName>Світлана</firstName>
+ <initials>Іванівна</initials>
+ <bday>26 жовтня 1995</bday>
+ <edu level="school">
+ Запорізька гімназія №71
+ </edu>
+ <edu level="college">
+ Запорізький радіо колледж,
+ Телекомунікації
+ </edu>
+ <edu level="university">
+ НУ Запорізька політехніка, Комп’ютерна інженерія
+ </edu>
+ <edu level="university">
+ КНТУ, Захист інформації
+ </edu>
+ <job>
+ <company>Freshcode</company>
+ <post>Java Developer</post>
+ <start>25 листопада 2015</start>
+ <end>8 червня 2018</end>
+ </job>
+ <job>
+ <company>Lagrange-systems</company>
+ <post>Java Developer</post>
+ <start>20 червня 2018</start>
+ <end>15 січня 2020</end>
+ </job>
+<contact type="tel">099-123-45-67</contact>
+<contact type="email">my_email@gmail.com</contact>
+
+</resume>

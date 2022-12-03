@@ -1,0 +1,46 @@
+# Project: lab_2_2
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe -std=c++11 -D__DEBUG__
+CC       = gcc.exe -D__DEBUG__
+WINDRES  = windres.exe
+OBJ      = main.o determ.o determ1.o gauss.o inversion.o display.o iteration.o
+LINKOBJ  = main.o determ.o determ1.o gauss.o inversion.o display.o iteration.o
+LIBS     = -L"D:/Dev-Cpp/MinGW64/lib" -L"D:/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc -g3
+INCS     = -I"D:/Dev-Cpp/MinGW64/include" -I"D:/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"D:/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
+CXXINCS  = -I"D:/Dev-Cpp/MinGW64/include" -I"D:/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"D:/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"D:/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
+BIN      = lab_2_2.exe
+CXXFLAGS = $(CXXINCS) -std=c++11 -g3
+CFLAGS   = $(INCS) -std=c++11 -g3
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+main.o: main.cpp
+	$(CPP) -c main.cpp -o main.o $(CXXFLAGS)
+
+determ.o: determ.cpp
+	$(CPP) -c determ.cpp -o determ.o $(CXXFLAGS)
+
+determ1.o: determ1.cpp
+	$(CPP) -c determ1.cpp -o determ1.o $(CXXFLAGS)
+
+gauss.o: gauss.cpp
+	$(CPP) -c gauss.cpp -o gauss.o $(CXXFLAGS)
+
+inversion.o: inversion.cpp
+	$(CPP) -c inversion.cpp -o inversion.o $(CXXFLAGS)
+
+display.o: display.cpp
+	$(CPP) -c display.cpp -o display.o $(CXXFLAGS)
+
+iteration.o: iteration.cpp
+	$(CPP) -c iteration.cpp -o iteration.o $(CXXFLAGS)
