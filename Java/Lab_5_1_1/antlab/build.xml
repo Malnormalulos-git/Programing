@@ -12,7 +12,7 @@
 	</target>
 
 	<target name = "execute" depends = "compile">
-		<java classname = "edu.zntu.filippenkov.DemoAdamAndEva" classpath = "build">
+		<java classname = "edu.zntu.username.DemoAdamAndEva" classpath = "build">
 		</java>
 	</target>
 </project>

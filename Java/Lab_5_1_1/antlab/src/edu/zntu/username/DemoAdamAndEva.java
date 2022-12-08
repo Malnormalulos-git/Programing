@@ -1,4 +1,4 @@
-package filippenkov;
+package edu.zntu.username;
 
 class Adam{
 	void heSaid(){
