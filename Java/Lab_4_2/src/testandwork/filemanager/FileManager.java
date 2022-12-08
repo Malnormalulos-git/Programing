@@ -1,6 +1,6 @@
-package filemanager;
+package testandwork.filemanager;
 
-import data.Document;
+import testandwork.data.Document;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

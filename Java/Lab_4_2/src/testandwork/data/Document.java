@@ -1,4 +1,4 @@
-package data;
+package testandwork.data;
 
 public class Document{
     private String file;

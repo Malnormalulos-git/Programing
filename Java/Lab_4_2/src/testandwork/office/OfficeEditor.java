@@ -1,6 +1,6 @@
-package office;
+package testandwork.office;
 
-import texteditor .*;
+import testandwork.texteditor.*;
 
 public class OfficeEditor extends NotePad{
     private String font;

@@ -1,8 +1,8 @@
 package testandwork;
 
-import ide.*;
-import office.*;
-import texteditor.*;
+import testandwork.ide.*;
+import testandwork.office.*;
+import testandwork.texteditor.*;
 
 public class TestAndWork{
     public static void main(String[] args){

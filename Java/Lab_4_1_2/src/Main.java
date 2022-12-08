@@ -22,17 +22,14 @@ public class Main {
         counterL = 0;
         counterB = 0;
         for(int i = 0; i < size; i++){
-//			System.out.print(arr[i] + "\t\t");
             if(arr[i] < arr[1]){
                 arrL[counterL] = arr[i];
                 counterL++;
             }
             else if(arr[i] > arr[1]){
-//				System.out.print("\t\t" + arr[i]);
                 arrB[counterB] = arr[i];
                 counterB++;
             }
-//			System.out.print('\n');
         }
         int i = 0;
         System.out.println(" N  Array\t\t\t\t\tLesser\t\t\t\t\tBigger");

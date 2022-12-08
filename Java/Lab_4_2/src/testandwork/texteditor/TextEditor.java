@@ -1,4 +1,4 @@
-package texteditor;
+package testandwork.texteditor;
 
 public class TextEditor{
     private String text;

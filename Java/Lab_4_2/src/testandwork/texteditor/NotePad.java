@@ -1,7 +1,7 @@
-package texteditor;
+package testandwork.texteditor;
 
-import data.Document;
-import filemanager.FileManager;
+import testandwork.data.Document;
+import testandwork.filemanager.FileManager;
 
 public class NotePad extends TextEditor{
     protected Document document;

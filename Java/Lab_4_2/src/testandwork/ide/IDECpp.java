@@ -1,4 +1,4 @@
-package ide;
+package testandwork.ide;
 
 public class IDECpp extends IDE{
     public void doCompile(String name){

@@ -30,36 +30,33 @@ minOccurs="0"/>
  </xs:element>
 
  <xs:element name="job" minOccurs="0" maxOccurs="20">
- <xs:complexType>
- 
- 
- <xs:sequence>
-     
- <xs:element name="company" minOccurs="0" maxOccurs="10">
- <xs:complexType>
- <xs:simpleContent>
- <xs:extension base="xs:string">
- <xs:attribute name="type">
- <xs:simpleType>
- <xs:restriction base="xs:string">
- <xs:enumeration value="VAT"/>
-<xs:enumeration value="ВАТ"/>
-<xs:enumeration value="TOV"/>
-<xs:enumeration value="ТОВ"/>
- </xs:restriction>
- </xs:simpleType>
- </xs:attribute>
- </xs:extension>
- </xs:simpleContent>
- </xs:complexType>
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element name="company" minOccurs="0" maxOccurs="10">
+				<xs:complexType>
+					<xs:simpleContent>
+						<xs:extension base="xs:string">
+							<xs:attribute name="type">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:enumeration value="VAT"/>
+										<xs:enumeration value="ВАТ"/>
+										<xs:enumeration value="TOV"/>
+										<xs:enumeration value="ТОВ"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:attribute>
+						</xs:extension>
+					</xs:simpleContent>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="post" type="xs:string"/>
+			<xs:element name="start" type="xs:date"/>
+			<xs:element name="end" type="xs:date"/>
+		</xs:sequence>
+	</xs:complexType>
  </xs:element>
  
- <xs:element name="post" type="xs:string"/>
- <xs:element name="start" type="xs:date"/>
- <xs:element name="end" type="xs:date"/>
- </xs:sequence>
- </xs:complexType>
- </xs:element>
  </xs:sequence>
  </xs:complexType>
 </xs:schema>

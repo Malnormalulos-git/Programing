@@ -1,6 +1,6 @@
-package ide;
+package testandwork.ide;
 
-import texteditor.NotePad;
+import testandwork.texteditor.NotePad;
 
 public abstract class IDE extends NotePad{
     public abstract void doCompile(String s);
