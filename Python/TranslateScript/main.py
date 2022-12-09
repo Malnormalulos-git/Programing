@@ -1,9 +1,11 @@
 import time
 from selenium import webdriver
 import chromedriver_autoinstaller
-from selenium.webdriver.common.by import By
 import re  # regular expressions
 import os  # for working with directories
+
+from selenium.webdriver.common.by import By
+
 # from selenium.webdriver.common.keys import Keys
 
 # browser
