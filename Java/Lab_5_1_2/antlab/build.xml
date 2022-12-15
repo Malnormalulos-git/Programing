@@ -3,6 +3,7 @@
 
 	<target name="init">
 		<mkdir dir="build"/>
+		<echo>Lab5_1 Kyrylо KNT 521</echo>
 		<echo> init complete! </echo>
 	</target>
 
@@ -14,9 +15,15 @@
 
 	<target name="execute" depends="compile">
 		<java 
-			classname="edu.zntu.username.DemoAdamAndEva" 
+			classname="edu.zntu.filippenkov.DemoAdamAndEva" 
 			classpath="build"
 			fork="true">
+			<arg value="${param}"/>
 		</java>
+	</target>
+	
+	<target name="clean">
+		<echo>cleaning up</echo>
+		<delete dir="build"/>
 	</target>
 </project>
