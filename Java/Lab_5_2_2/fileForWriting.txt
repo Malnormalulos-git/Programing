@@ -1,0 +1,2 @@
+fileForWriting.txt	16.12.2022 18:28:35	Filippenkov KyryloText data
+123456789
