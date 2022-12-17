@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"edu.zntu.filippenkov","l":"DemoDoc"},{"p":"edu.zntu.filippenkov","l":"Exponent"},{"p":"edu.zntu.filippenkov","l":"InOutFile"}];updateSearchResults();

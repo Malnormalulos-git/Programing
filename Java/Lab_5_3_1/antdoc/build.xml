@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<project name="Lab5_3_1" default="execute">
+	<target name="init">
+		<mkdir dir="build"/>
+		<mkdir dir ="doc"/>
+		<echo>Lab5_3_1 Kyrylo</echo>
+		<echo>init complete!</echo>
+	</target>
+	
+	<target name="compile" depends="init">
+		<javac srcdir="src" destdir="build" includeantruntime="false"/>
+		<echo>compilation complete!</echo>
+	</target>
+	
+	<target name ="execute" depends="compile,doc">
+		<java classname="edu.zntu.filippenkov.DemoDoc" classpath="build" fork = "true"> 
+		</java>
+	</target>
+	
+	<target name ="doc" depends ="compile">
+		<javadoc destdir ="doc" sourcepath ="src"
+		packagenames ="edu.*"/>
+	</target>
+	
+	<target name="clean">
+		<echo>cleaning up</echo>
+		<delete dir="build"/>
+		<delete dir="doc"/>
+	</target>
+</project>
