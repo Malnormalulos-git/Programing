@@ -1,28 +1,25 @@
-public class Main {
-    public static void main(String[] args) {
-        A a = new A();
-        B b = new B();
-        C c = new C();
-        A tmp = new B();
-        tmp.method();
-        a.method();
-        b.method();
-        c.method();
+interface Sale{
+    void sale(int money);
+}
+class ShopA implements Sale{
+    int Money;
+    public void sale(int money){
+        Money += money;
+        System.out.println("sailing goods A " + money + " grn");
     }
 }
-class A {
-    public static void method() {
-        System.out.println("A");
+class ShopB implements Sale{
+    int Money;
+    public void sale(int money){
+        Money += money;
+        System.out.println("sailing goods B " + money + " grn");
     }
 }
-class B extends A {
-    @Override
-    public static void method() {
-        System.out.println("B");
+public class Main{
+    public static void main(String[] args){
+        Sale pointer = new ShopA();
+        pointer.sale(50);
+        pointer = new ShopB();
+        pointer.sale(100);
     }
-}
-class C extends B {
-    public static void method() {
-        System.out.println("C");
-    }
-}
+} 

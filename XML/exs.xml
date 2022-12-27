@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE book SYSTEM "dtd1.dtd">
+<book>
+	<title>
+		<name>Kobzar</name>
+		<author>Shevchenko</author>
+	</title>
+	<contests>
+		<items>
+			<page number=5 />
+			<page number=7 />
+		</items>
+	</contests>
+	<pagecontent>Як умру то поховайте</pagecontent>
+	<pagecontent>Мене на могилі</pagecontent>
+</book>
